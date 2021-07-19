@@ -29,6 +29,12 @@
       "text": "test",
       "day": "May 27 at 12:30",
       "reminder": true
+    },
+    {
+      "text": "get red of it",
+      "day": "24 jun at 5:30",
+      "reminder": true,
+      "id": 6
     }
   ]
 }
