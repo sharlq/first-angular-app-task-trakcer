@@ -1,0 +1,39 @@
+<form class="addTaskForm">
+  <div class="field">
+    <label for="task-text">Task</label>
+    <input
+      type="text"
+      class="textInput"
+      id="task-text"
+      placeholder="Add Task"
+      name="text"
+      [(ngModel)]="text"
+    />
+  </div>
+  <div class="field">
+    <label for="task-dayTime">Day & Time</label>
+    <input
+      type="text"
+      class="textInput"
+      id="task-dayTime"
+      placeholder="Day at Time"
+      name="day"
+      [(ngModel)]="day"
+    />
+  </div>
+  <div class="checkBoxField">
+    <label for="task-dayTime">Reminer : </label>
+    <input
+      type="checkbox"
+      id="task-dayTime"
+      name="reminder"
+      [(ngModel)]="reminder"
+    />
+  </div>
+  <app-button
+    color="#0072ff"
+    text="Add Task"
+    class="addTaskBtn"
+    (click)="onSubmitTask()"
+  ></app-button>
+</form>
